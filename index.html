@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <style>
+        /* Common Styles */
+        body {
+            font-family: 'Segoe Script', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #95C6B4; /* Changed background color */
+            color: #fff; /* Text color */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 0.1px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px; /* Increased margin */
+            font-size: 18px;
+            font-family: 'Poiret One', cursive; /* Use Poiret One font */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Default Desktop Styles */
+        #intro {
+            position: relative;
+            background-image: url('ring-bkg-new.jpg');
+            background-size: cover; /* Adjusted property */
+            background-repeat: no-repeat; /* Prevent background from repeating */
+            height: 600px;
+            background-position: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .bold-text {
+    font-weight: bold; /* Make the text bold */
+    /* Add border to the text */
+    border: 2px solid #000; /* Border color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners for the border */
+}
+
+.bold-text1 {
+    font-weight: bold; /* Make the text bold */
+    /* Add border to the text */
+    border: 3px solid #ffffff; /* Border color and thickness */
+    padding: 5px 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners for the border */
+}
+
+        .bottom-text {
+            position: absolute;
+            bottom: 20px; /* Adjust as needed */
+            margin-bottom: 5px;
+            left: 0;
+            right: 0;
+        }
+
+        .invitation {
+            font-family: 'Poiret One', cursive;
+            font-size: 30px;
+            color: #ff6200;
+            margin-bottom: 10px;
+        }
+
+        .invitation-date {
+            font-family: 'Poiret One', cursive;
+            font-size: 25px;
+            color: #333; /* Dark gray color */
+            margin-bottom: 25px;
+        }
+
+        #event-details-pic1 {
+            background-image: url('photo-bkg.jpg');
+        }
+
+        #event-details-pic {
+            background-image: url('photo-bkg.jpg');
+            background-size: cover; /* Adjusted property */
+            background-repeat: no-repeat; /* Prevent background from repeating */
+            height: 110px;
+            text-align: center;
+        }
+        .bio{
+            font-family: 'Poiret One', cursive;
+            font-size: 20px;
+            color: #333; /* Dark gray color */
+            margin-top: 25px;
+            margin-left: 10px;
+        }
+        .image-bio{
+            margin-right: 10px;
+            margin-top: 25px
+        }
+
+        .invitationtext1 {
+                font-size: 50px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: right;
+                font-family: 'Poiret One', cursive;
+            }
+        .invitationtext2 {
+                font-size: 35px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: right;
+                font-family: 'Poiret One', cursive;
+            }
+
+        .invitationtext3 {
+                font-size: 20px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: right;
+                font-family: 'Poiret One', cursive;
+            }
+
+            .invitationtext4 {
+                font-size: 50px; /* Adjusted font size for mobile */
+                margin-top: 10px;
+                margin-bottom: 20px;
+                text-align: center;
+                font-family: 'Poiret One', cursive;
+                color: #000000;
+            }
+            .invitationtext5 {
+                font-size: 35px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: center;
+                font-family: 'Poiret One', cursive;
+                color: #000000;
+            }
+            .invitationtext6 {
+                font-size: 50px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: center;
+                font-family: 'Poiret One', cursive;
+                color: #ffffff;
+            }
+            .invitationtext7 {
+                font-size: 35px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: center;
+                font-family: 'Poiret One', cursive;
+                color: #ffffff;
+            }
+        #event-details {
+            background-image: url('event-bkg.jpg');
+        }
+
+        #wedding-details1 {
+    background-image: url('ring-new.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    
+    
+}
+
+        #wedding-details {
+            background-image: url('copa-pic2.jpg');
+            background-repeat: no-repeat; /* Prevent background from repeating */
+            background-size: cover;
+            height: 400px;
+        }
+
+        #celebration-dinner {
+            background-image: url('event-bkg.jpg');
+            height: 200px;
+        }
+
+        #accommodation {
+            background-image: url('acomm-bkg.jpg');
+            
+           
+            
+
+        }
+
+        #activity {
+            background-image: url('copa.jpg');
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+        }
+
+        #activity-list {
+            background-image: url('yellow-bkg.jpg');
+            height: 900px;
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+        }
+
+
+        #rsvp {
+            background-image: url('event-bkg.jpg');
+            height: 520px;
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+        }
+
+        #contact {
+            background-image: url('contact-background.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+        }
+
+        /* Media Queries for Mobile */
+        @media (max-width: 767px) {
+            #intro {
+                background-repeat: no-repeat; /* Prevent background from repeating */
+                height: 220px;
+            }
+
+            .bottom-text {
+                bottom: 20px; /* Adjusted bottom position for mobile */
+            }
+
+            .invitation {
+                font-size: 18px; /* Adjusted font size for mobile */
+                margin-bottom: 8px;
+            }
+
+            .invitation-date {
+                font-size: 15px; /* Adjusted font size for mobile */
+                margin-bottom: 10px;
+            }
+            #event-details-pic1 {
+            background-image: url('photo-bkg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat; /* Prevent background from repeating */
+                
+            }
+
+           .bio{
+            font-family: 'Poiret One', cursive;
+            font-size: 12px;
+            color: #333; /* Dark gray color */
+            margin-top: 48px;
+            margin-left: 10px;
+          }
+
+          #wedding-details {
+            background-image: url('copa-pic2.jpg');
+            height: 200px;
+            background-repeat: no-repeat; /* Prevent background from repeating */
+            
+            
+        }
+        #celebration-dinner {
+            background-image: url('event-bkg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat; /* Prevent background from repeating */
+            height: 30px;
+            
+        }
+        
+
+        .invitationtext1 {
+                font-size: 20px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: right;
+                font-family: 'Poiret One', cursive;
+            }
+        .invitationtext2 {
+                font-size: 15px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: right;
+                font-family: 'Poiret One', cursive;
+            }
+
+        .invitationtext3 {
+                font-size: 10px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: right;
+                font-family: 'Poiret One', cursive;
+            }
+            .invitationtext4 {
+                font-size: 20px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: center;
+                font-family: 'Poiret One', cursive;
+                color: #000000;
+            }
+            .invitationtext5 {
+                font-size: 15px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: center;
+                font-family: 'Poiret One', cursive;
+                color: #000000;
+            }
+            .invitationtext6 {
+                font-size: 20px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: center;
+                font-family: 'Poiret One', cursive;
+                color: #ffffff;
+            }
+            .invitationtext7 {
+                font-size: 15px; /* Adjusted font size for mobile */
+                margin-bottom: 40px;
+                text-align: center;
+                font-family: 'Poiret One', cursive;
+                color: #ffffff;
+            }
+
+            #activity {
+            background-image: url('copa.jpg');
+            height: 160px;
+            background-size: contain;
+            background-position: center;
+            padding: 100px 0;
+        }
+        #activity-list {
+            background-image: url('yellow-bkg.jpg');
+         
+            background-size: contain;
+            
+        }
+
+
+        }
+
+    </style>
+    <title>Neelam und Lars Hochzeit Einladung</title>
+</head>
+<body>
+
+<header>
+    <!-- Desktop-Navigation -->
+    <nav class="nav-desktop" style="font-weight: bold;">
+        <a href="#event-details-pic">Galerie</a> |
+        <a href="#event-details">Veranstaltungsdetails</a> |
+        <a href="#wedding-details">Hochzeit</a> |
+        <a href="#celebration-dinner">Hochzeitfeier</a> |
+        <a href="#accommodation">Unterkunft</a> |
+        <a href="#rsvp">Einladung</a> |
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+ 
+</header>
+
+
+
+<section id="intro" style="position: relative; text-align: center;">
+    <div class="bottom-text" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);">
+        <div class="invitation">Our wedding invitation</div>
+        <div class="invitation-date">06 July 2024</div>
+    </div>
+</section>
+
+<!-- Add sections and content below -->
+<section id="event-details-pic" style="position: relative;">
+    <div class="bio" style="text-align: left; position: absolute; top: 0; left: 50%">
+        It fills us with great joy, to invite you <br> 
+        to our wedding in the beautiful city of Copenhagen.<br>
+        This special day will create unforgettable <br>
+        memories that we want to share with you.<br>
+        Let's celebrate the beginning of our new 
+        chapter in life surrounded by our family<br>
+        and friends.
+    </div>
+    <div class="image-bio" style="position: absolute; top: 0; right: 0; right: 50%;">
+        <img src="neelars_mob.jpg" alt="Your Image" style="width: 220px; height: 260px;"> 
+    </div>
+</section>
+
+<section id="event-details">
+    <div class="container">
+        <h2 class="section-title" style="font-family: 'Poiret One', cursive; font-size: 40px; margin-bottom: 20px;">Event details</h2>
+        <div id="countdown" class="countdown-container" style="font-family: 'Poiret One', cursive;">
+            <div class="countdown-item">
+                <span id="days" class="countdown-value"></span>
+                <span class="countdown-label">Tage</span>
+            </div>
+            <div class="countdown-item">
+                <span id="hours" class="countdown-value"></span>
+                <span class="countdown-label">Stunden</span>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes" class="countdown-value"></span>
+                <span class="countdown-label">Minuten</span>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds" class="countdown-value"></span>
+                <span class="countdown-label">Sekunden</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Poiret One', cursive;
+}
+
+.countdown-item {
+    margin: 0 10px;
+}
+
+.countdown-value {
+    font-weight: bold;
+}
+
+.countdown-label {
+    margin-left: 5px;
+}
+</style>
+
+<script>
+    // Set the date of the event (6th July 2024 at 12:30 PM)
+    var eventDate = new Date("July 6, 2024 12:30:00").getTime();
+
+    // Update the countdown every second
+    var x = setInterval(function() {
+
+        // Get the current date and time
+        var now = new Date().getTime();
+
+        // Calculate the time remaining until the event
+        var distance = eventDate - now;
+
+        // Calculate days, hours, minutes, and seconds remaining
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the countdown in the respective elements
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // If the countdown is over, display a message
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "Die Veranstaltung ist jetzt live!";
+        }
+    }, 1000);
+</script>
+
+
+<section id="wedding-details1" style="position: relative;">
+    <div class="container">
+        <div class="invitationtext4">
+            <div>
+                <p class="bold-text">Hochzeit</p>
+            </div>
+        </div>
+        <div class="invitationtext5">
+            <div>
+                <p class="bold-text">On 6th July 2024 <br>  
+                at 12:30 hr <br>  
+                City Hall, Copenhagen</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="wedding-details">
+    <div class="container">
+        <!-- Content for celebration dinner -->
+    </div>
+</section>
+
+
+
+<section id="celebration-dinner" style="position: relative;">
+    <div class="container">
+        <!-- Image -->
+        <img src="zahida.jpg" style="position: absolute; top: 0; left: 0; width: auto; height: 200%;" alt="Zahida Image">
+        <!-- Content -->
+        <div class="invitationtext1 bold-text1">
+            <div>
+                <p>Wedding celebration</p>
+            </div>
+        </div>
+        <div class="invitationtext2 bold-text1">
+            <div>
+                <p>On 6th July 2024 <br>  
+                at 17:30 hr <br>  
+                Zahida, Copenhagen</p>
+            </div>
+        </div>
+        <div class="invitationtext3">
+            <li><a href="ZAHIDA_MENU_ENGLISH.pdf" target="_blank" style="font-size: 16px; color: orange; margin-bottom: 20px;">English Menu</a></li>
+            <li><a href="ZAHIDA_MENU_DEUTSCH.pdf" target="_blank" style="font-size: 16px; color: orange;">Deutsche Speisekarte</a></li>
+        </div>
+    </div>
+</section>
+
+
+<section id="celebration-dinner">
+    <div class="container">
+        <!-- Content for celebration dinner -->
+    </div>
+</section>
+
+
+
+<section id="accommodation" style="position: relative;">
+    <div class="container">
+    <div class="invitationtext6">
+        <div>
+            <p>Accomodation
+        </div>
+    </div>
+        <div class="invitationtext7">
+            <div>
+                <p>Stay with us at CPH Studio Hotel, Copenhagen</p>
+            </div>
+        </div>
+        <button style="font-family: 'Poiret One', cursive; background-color: #333;color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"><a href="https://cphstudiohotel.dk/" style="color: #fff; text-decoration: none;">Explore now</a></button>
+    </div>
+</section>
+
+
+<section id="activity"; background-color: rgba(51, 51, 51, 0.7);">
+    <div class="container" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+        <div class="section-content" style="position: relative; text-align: center;">
+            <h2 class="section-title" style="font-family: 'Poiret One', cursive; font-size: 52px; color: #ffffff; background-color: rgba(51, 51, 51, 0.7); padding: 10px;">
+                Explore Copenhagen
+            </h2>
+        </div>
+    </div>
+</section>
+
+
+<section id="activity-list" style="position: relative; padding: 0 20px;">
+    <div class="container">
+        <div class="section-content" style="position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%;">
+            <h2 class="section-title" style="font-family: 'Poiret One', cursive; font-size: 32px; margin-bottom: 40px; color: #000000;">
+                <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                    <div style="flex: 1;">
+                        Explore the historic Zealand Castle
+                    </div>
+                    <img src="act1.jpeg" alt="Activity 1" style="width: 160px; height: 160px; margin-left: 20px;">
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                    <img src="act2.jpeg" alt="Activity 2" style="width: 160px; height: 160px; margin-right: 20px;">
+                    <div style="flex: 1;">
+                        Visit the Louisiana Museum of Modern Art
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 20px">
+                    <div style="flex: 1;">
+                        Explore the Tivoli Gardens at night
+                    </div>
+                    <img src="act3.jpeg" alt="Activity 3" style="width: 160px; height: 160px; margin-left: 20px">
+                </div>
+                <div style="display: flex; align-items: center;">
+                    <img src="act4.jpeg" alt="Activity 4" style="width: 160px; height: 160px; margin-right: 20px;margin-bottom: 40px">
+                    <div style="flex: 1;">
+                        Take a boat tour on the canals of Copenhagen
+                    </div>
+                </div>
+            </h2>
+            <button style="font-family: 'Poiret One', cursive; font-size: 20px; background-color: rgba(51, 51, 51, 0.7); color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"><a href="https://www.visitcopenhagen.com/copenhagen/activities/summer/essential-guide-summer-copenhagen" style="color: #fff; text-decoration: none;"> More fun things to do in Copenhagen</a></button>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="rsvp" style="font-family: 'Poiret One', cursive; padding: 50px 20px;">
+    <div class="container" style="max-width: 600px; margin: 0 auto;">
+        <h2 class="section-title" style="font-size: 45px; margin-bottom: 30px;">Join our celebration</h2> <!-- German translation -->
+        <form action="https://formspree.io/f/mwkgqbjz" method="POST" style="text-align: left;">
+            <div style="margin-bottom: 20px;">
+                <label for="name" style="font-size: 20px;">Name</label> <!-- German translation -->
+                <input type="text" id="name" name="name" required style="font-size: 20px; padding: 10px; width: 100%; box-sizing: border-box;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="mobile" style="font-size: 20px;">Mobile No.</label> <!-- German translation -->
+                <input type="tel" id="mobile" name="mobile" required style="font-size: 20px; padding: 10px; width: 100%; box-sizing: border-box;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="attend" style="font-size: 20px;">Are you coming ?</label> <!-- German translation -->
+                <select id="attend" name="attend" required onchange="toggleMenu(this.value)" style="font-size: 20px; padding: 10px; width: 100%; box-sizing: border-box;">
+                    <option value="">Please choose...</option>
+                    <option value="yes">Yes, I will come</option> <!-- German translation -->
+                    <option value="no">Sorry, I can not come</option> <!-- German translation -->
+                </select>
+            </div>
+
+            <div id="menuSelection" style="display: none; margin-bottom: 20px;">
+                <label for="menu" style="font-size: 20px;">Your choice of restaurant menu</label> <!-- German translation -->
+                <select id="menu" name="menu" required style="font-size: 20px; padding: 10px; width: 100%; box-sizing: border-box;">
+                    <option value="">Auswählen...</option>
+                    <option value="Tasting">Tasting Menü</option> <!-- German translation -->
+                    <option value="Vegetarian">Vegetarian Tasting Menü</option> <!-- German translation -->
+                    <option value="Vegan">Vegan Menü</option> <!-- German translation -->
+                </select>
+            </div>
+
+            <div id="plusOne" style="display: none; margin-bottom: 20px;">
+                <label for="guest" style="font-size: 20px;">Do you bring a companion? ?</label> <!-- German translation -->
+                <select id="guest" name="guest" onchange="toggleGuestInfo(this.value)" style="font-size: 20px; padding: 10px; width: 100%; box-sizing: border-box;">
+                    <option value="no">No</option> <!-- German translation -->
+                    <option value="yes">Yes</option> <!-- German translation -->
+                </select>
+            </div>
+
+            <div id="guestInfo" style="display: none; margin-bottom: 20px;">
+                <label for="guestName" style="font-size: 20px;">Name of your companion</label> <!-- German translation -->
+                <input type="text" id="guestName" name="guestName" style="font-size: 20px; padding: 10px; width: 100%; box-sizing: border-box;">
+
+                <label for="guestMenu" style="font-size: 20px;">companion's choice of restaurant menu</label> <!-- German translation -->
+                <select id="guestMenu" name="guestMenu" style="font-size: 20px; padding: 10px; width: 100%; box-sizing: border-box;">
+                    <option value="">Please choose...</option>
+                    <option value="Tasting">Tasting Menü</option> <!-- German translation -->
+                    <option value="Vegetarian">Vegetarian  Tasting Menü</option> <!-- German translation -->
+                    <option value="Vegan">Vegan Tasting Menü</option> <!-- German translation -->
+                </select>
+            </div>
+
+            <button type="submit" style="font-size: 20px; padding: 10px 20px; background-color: rgba(51, 51, 51, 0.7); color: #fff; border: none; border-radius: 5px; cursor: pointer;">Submit</button> <!-- German translation -->
+        </form>
+    </div>
+</section>
+
+<script>
+    function toggleMenu(value) {
+        var menuSelection = document.getElementById('menuSelection');
+        var plusOne = document.getElementById('plusOne');
+        var guestInfo = document.getElementById('guestInfo');
+
+        if (value === 'yes') {
+            menuSelection.style.display = 'block';
+            plusOne.style.display = 'block';
+        } else {
+            menuSelection.style.display = 'none';
+            plusOne.style.display = 'none';
+            guestInfo.style.display = 'none';
+        }
+
+        adjustSectionHeight();
+    }
+
+    function toggleGuestInfo(value) {
+        var guestInfo = document.getElementById('guestInfo');
+        if (value === 'yes') {
+            guestInfo.style.display = 'block';
+        } else {
+            guestInfo.style.display = 'none';
+        }
+
+        adjustSectionHeight();
+    }
+
+    function adjustSectionHeight() {
+        var section = document.getElementById('rsvp');
+        section.style.height = 'auto'; // Reset height
+        var newHeight = section.scrollHeight + 'px';
+        section.style.height = newHeight;
+    }
+</script>
+
+
+
+<section id="contact" style="font-family: 'Poiret One', cursive;">
+    <div class="container">
+        <h2 class="section-title" style="color: #444; font-size: 50px;">Contact</h2>
+        <p style="color: #444; font-size: 28px;">If you have any questions or need help, please feel free to contact us:</p>
+        <p style="color: #444; font-size: 20px;">E-Mail: neelamakumariyadav95@gmail.com</p>
+        <p style="color: #444; font-size: 20px;">Mobile No. +49-15730133132 / +33-768198437</p>
+    </div>
+</section>
+
+<footer style="text-align: center;">
+    <div class="container">
+        <p>&copy; 2024 Neelam & Lars</p>
+    </div>
+</footer>
+
+</body>
+</html>
